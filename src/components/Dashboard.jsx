@@ -23,21 +23,18 @@ const Dashboard = () => {
     {
       label: 'Total Products',
       value: totalProducts,
-      icon: '📦',
       color: 'bg-blue-50 text-blue-600',
       border: 'border-blue-200'
     },
     {
       label: 'Inventory Value',
       value: `$${totalValue.toFixed(2)}`,
-      icon: '💰',
       color: 'bg-emerald-50 text-emerald-600',
       border: 'border-emerald-200'
     },
     {
       label: 'Low Stock Items',
       value: lowStock,
-      icon: '⚠️',
       color: lowStock > 0 ? 'bg-red-50 text-red-600' : 'bg-emerald-50 text-emerald-600',
       border: lowStock > 0 ? 'border-red-200' : 'border-emerald-200'
     },
