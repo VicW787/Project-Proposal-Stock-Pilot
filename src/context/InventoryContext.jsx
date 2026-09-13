@@ -4,7 +4,7 @@ const JSON_SERVER = 'http://localhost/3000';
 
 const InventoryContext = createContext();
 
-const InventoryProvider = ({ children }) => {
+export const InventoryProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [sales, setSales] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -174,9 +174,9 @@ const InventoryProvider = ({ children }) => {
   };
 
   return (
-    <InventoryContext.Provider value={value}>
+    <InventoryProvider value={value}>
       {children}
-    </InventoryContext.Provider>
+    </InventoryProvider>
   );
 };
 

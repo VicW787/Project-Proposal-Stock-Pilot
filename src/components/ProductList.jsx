@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInventory } from '../context/InventoryContext';
 import ProductForm from './ProductForm';

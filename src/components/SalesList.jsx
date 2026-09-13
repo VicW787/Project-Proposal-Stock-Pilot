@@ -1,4 +1,4 @@
-import { useInventory } from '../context/InventoryContext';
+import { useInventory } from '../context/InventoryContext.jsx';
 
 const SalesList = () => {
   const { sales, deleteSale, loading } = useInventory();
