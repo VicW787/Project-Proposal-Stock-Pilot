@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect, useContext } from 'react';
 
-const JSON_SERVER = 'http://localhost/3000';
+const JSON_SERVER = 'http://localhost:3000';
 
 const InventoryContext = createContext();
 
@@ -174,9 +174,9 @@ export const InventoryProvider = ({ children }) => {
   };
 
   return (
-    <InventoryProvider value={value}>
+    <InventoryContext.Provider value={value}>
       {children}
-    </InventoryProvider>
+    </InventoryContext.Provider>
   );
 };
 
