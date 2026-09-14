@@ -53,8 +53,8 @@ const Dashboard = () => {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-primary">Dashboard</h2>
-        <p className="text-slate-500 mt-1">
+        <h2 className="text-3xl font-bold text-white drop-shadow-lg">Dashboard</h2>
+        <p className="text-slate-200 mt-1 drop-shadow-md">
           Overview of your business inventory
         </p>
       </div>
