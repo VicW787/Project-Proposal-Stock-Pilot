@@ -3,7 +3,7 @@ import { useInventory } from '../context/InventoryContext';
 import ProductForm from './ProductForm';
 
 const ProductList = () => {
-  const { products, updateProduct, deleteProduct, loading, error } = useInventory();
+  const { products, updateProduct, deleteProduct} = useInventory();
   const [search, setSearch] = useState('');
   const [editingId, setEditingId] = useState(null);
   const [editForm, setEditForm] = useState({});
@@ -28,22 +28,6 @@ const ProductList = () => {
     setEditingId(null);
   };
 
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-64">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="bg-red-50 border border-red-200 text-red-600 p-4 rounded-lg">
-        {error}
-      </div>
-    );
-  }
-
   return (
     <div>
       <div className="mb-6">
@@ -56,7 +40,7 @@ const ProductList = () => {
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <input
             type="text"
-            placeholder="🔍 Search products by name or category..."
+            placeholder="Search products by name or category..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 px-4 py-2.5 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
@@ -140,7 +124,7 @@ const ProductList = () => {
                         ? 'bg-red-50 text-red-600'
                         : 'bg-emerald-50 text-emerald-600'
                     }`}>
-                      {p.quantity < 10 ? '⚠ Low' : '✓ In Stock'}
+                      {p.quantity < 10 ? 'Low' : 'In Stock'}
                     </span>
                   </td>
                   <td className="px-4 py-3">

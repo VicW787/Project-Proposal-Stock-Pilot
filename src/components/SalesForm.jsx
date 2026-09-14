@@ -16,7 +16,7 @@ const SalesForm = () => {
 
   return (
     <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-      <h3 className="text-lg font-bold text-primary mb-4">🛒 Record New Sale</h3>
+      <h3 className="text-lg font-bold text-primary mb-4">Record New Sale</h3>
       <form onSubmit={handleSubmit} className="flex flex-col lg:flex-row gap-4 items-end">
         <div className="flex-1 w-full">
           <label className="block text-sm font-medium text-slate-600 mb-1.5">
