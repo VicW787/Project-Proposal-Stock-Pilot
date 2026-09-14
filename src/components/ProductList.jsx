@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useInventory } from '../context/InventoryContext';
-import ProductForm from './ProductForm';
+import { useInventory } from '../context/InventoryContext.jsx';
+import ProductForm from './ProductForm.jsx';
 
 const ProductList = () => {
   const { products, updateProduct, deleteProduct} = useInventory();

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useInventory } from '../context/InventoryContext';
+import { useInventory } from '../context/InventoryContext.jsx';
 
 const SalesForm = () => {
   const { products, recordSale } = useInventory();

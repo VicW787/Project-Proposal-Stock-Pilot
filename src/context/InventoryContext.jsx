@@ -7,8 +7,6 @@ const InventoryContext = createContext();
 export const InventoryProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [sales, setSales] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   // Load data from JSON Server using fetch + .then()
   useEffect(() => {
@@ -21,12 +19,9 @@ export const InventoryProvider = ({ children }) => {
       .then(response => response.json())
       .then(data => {
         setSales(data);
-        setLoading(false);
       })
       .catch(err => {
         console.error('Error loading data:', err);
-        setError('Failed to load data from JSON Server');
-        setLoading(false);
       });
   }, []);
 
@@ -160,8 +155,6 @@ export const InventoryProvider = ({ children }) => {
   const value = {
     products,
     sales,
-    loading,
-    error,
     totalProducts,
     totalValue,
     lowStock,

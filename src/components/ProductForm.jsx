@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useInventory } from "../context/InventoryContext";
+import { useInventory } from "../context/InventoryContext.jsx";
 
 const ProductForm = () => {
   const { addProduct } = useInventory();
@@ -33,9 +33,9 @@ const ProductForm = () => {
     return (
       <button
         onClick={() => setShowForm(true)}
-        className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-secondary transition-colors duration-200 shadow-sm"
+        className="text-black px-6 py-2.5 rounded-lg font-medium hover:bg-secondary transition-colors duration-200 shadow-sm"
       >
-        + Add Product
+        Add Product
       </button>
     );
   }
