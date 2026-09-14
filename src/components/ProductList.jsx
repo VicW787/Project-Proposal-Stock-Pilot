@@ -31,8 +31,8 @@ const ProductList = () => {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-3xl font-bold text-primary">Products</h2>
-        <p className="text-slate-500 mt-1">Manage your inventory items</p>
+        <h2 className="text-3xl font-bold text-white drop-shadow-lg">Products</h2>
+        <p className="text-slate-200 mt-1 drop-shadow-md">Manage your inventory items</p>  
       </div>
 
       <div className="bg-white rounded-2xl shadow-sm p-6">

@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Organic Coffee Beans",
       "description": "Premium Arabica beans, medium roast",
       "category": "Beverages",
@@ -10,16 +10,16 @@
       "createdAt": "2026-08-31T10:30:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Leather Notebook",
       "description": "A5 ruled notebook with genuine leather cover",
       "category": "Stationery",
-      "price": 8.50,
+      "price": 8.5,
       "quantity": 120,
       "createdAt": "2026-08-31T10:35:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Wireless Mouse",
       "description": "Ergonomic design with silent clicks",
       "category": "Electronics",
@@ -28,16 +28,16 @@
       "createdAt": "2026-08-31T10:40:00Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Desk Lamp",
       "description": "LED adjustable brightness, 3 color modes",
       "category": "Furniture",
-      "price": 35.00,
+      "price": 35,
       "quantity": 15,
       "createdAt": "2026-08-31T10:45:00Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Water Bottle",
       "description": "Stainless steel, vacuum insulated",
       "category": "Accessories",
@@ -46,16 +46,16 @@
       "createdAt": "2026-08-31T10:50:00Z"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Bluetooth Speaker",
       "description": "Portable waterproof speaker",
       "category": "Electronics",
       "price": 49.99,
-      "quantity": 22,
+      "quantity": 15,
       "createdAt": "2026-08-31T11:00:00Z"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Running Shoes",
       "description": "Lightweight breathable mesh",
       "category": "Apparel",
@@ -64,16 +64,16 @@
       "createdAt": "2026-08-31T11:05:00Z"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Backpack",
       "description": "Water-resistant 30L capacity",
       "category": "Accessories",
-      "price": 45.00,
+      "price": 45,
       "quantity": 18,
       "createdAt": "2026-08-31T11:10:00Z"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Smart Watch",
       "description": "Fitness tracker with heart rate monitor",
       "category": "Electronics",
@@ -82,18 +82,18 @@
       "createdAt": "2026-08-31T11:15:00Z"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Ceramic Mug",
       "description": "Handcrafted 12oz mug",
       "category": "Kitchenware",
-      "price": 14.50,
-      "quantity": 60,
+      "price": 14.5,
+      "quantity": 15,
       "createdAt": "2026-08-31T11:20:00Z"
     }
   ],
   "sales": [
     {
-      "id": 1,
+      "id": "1",
       "productId": 1,
       "productName": "Organic Coffee Beans",
       "quantity": 2,
@@ -102,16 +102,16 @@
       "createdAt": "2026-09-01T09:15:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "productId": 2,
       "productName": "Leather Notebook",
       "quantity": 5,
-      "total": 42.50,
+      "total": 42.5,
       "date": "2026-09-02",
       "createdAt": "2026-09-02T10:20:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "productId": 3,
       "productName": "Wireless Mouse",
       "quantity": 1,
@@ -120,16 +120,16 @@
       "createdAt": "2026-09-03T11:30:00Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "productId": 4,
       "productName": "Desk Lamp",
       "quantity": 2,
-      "total": 70.00,
+      "total": 70,
       "date": "2026-09-04",
       "createdAt": "2026-09-04T14:45:00Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "productId": 5,
       "productName": "Water Bottle",
       "quantity": 3,
@@ -138,7 +138,7 @@
       "createdAt": "2026-09-05T08:00:00Z"
     },
     {
-      "id": 6,
+      "id": "6",
       "productId": 6,
       "productName": "Bluetooth Speaker",
       "quantity": 1,
@@ -147,7 +147,7 @@
       "createdAt": "2026-09-06T16:10:00Z"
     },
     {
-      "id": 7,
+      "id": "7",
       "productId": 7,
       "productName": "Running Shoes",
       "quantity": 2,
@@ -156,16 +156,16 @@
       "createdAt": "2026-09-07T12:25:00Z"
     },
     {
-      "id": 8,
+      "id": "8",
       "productId": 8,
       "productName": "Backpack",
       "quantity": 1,
-      "total": 45.00,
+      "total": 45,
       "date": "2026-09-08",
       "createdAt": "2026-09-08T15:40:00Z"
     },
     {
-      "id": 9,
+      "id": "9",
       "productId": 9,
       "productName": "Smart Watch",
       "quantity": 1,
@@ -174,13 +174,32 @@
       "createdAt": "2026-09-09T10:50:00Z"
     },
     {
-      "id": 10,
+      "id": "10",
       "productId": 10,
       "productName": "Ceramic Mug",
       "quantity": 4,
-      "total": 58.00,
+      "total": 58,
       "date": "2026-09-10",
       "createdAt": "2026-09-10T13:35:00Z"
+    },
+    {
+      "productId": "6",
+      "productName": "Bluetooth Speaker",
+      "quantity": 7,
+      "total": 349.93,
+      "date": "2026-09-14",
+      "createdAt": "2026-09-14T10:38:19.252Z",
+      "id": "fcTWpzXdcXY"
+    },
+    {
+      "productId": "10",
+      "productName": "Ceramic Mug",
+      "quantity": 45,
+      "total": 652.5,
+      "date": "2026-09-14",
+      "createdAt": "2026-09-14T10:38:59.561Z",
+      "id": "gmivydiDYEU"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
