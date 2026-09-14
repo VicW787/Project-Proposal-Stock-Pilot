@@ -1,24 +1,8 @@
 import { useInventory } from "../context/InventoryContext";
 
 const Dashboard = () => {
-  const { totalProducts, totalValue, lowStock, totalSales, loading, error } =
+  const { totalProducts, totalValue, lowStock, totalSales } =
     useInventory();
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-64">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="bg-red-50 border border-red-200 text-red-600 p-4 rounded-lg">
-        {error}
-      </div>
-    );
-  }
 
   const stats = [
     {

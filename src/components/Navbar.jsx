@@ -4,8 +4,8 @@ const Navbar = () => {
   const linkClass = ({ isActive }) =>
     `px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
       isActive
-        ? 'bg-secondary text-white'
-        : 'text-slate-300 hover:bg-white/5 hover:text-white'
+        ? 'text-black'
+        : 'text-slate-300 hover:bg-white/5 hover:text-black'
     }`;
 
   return (

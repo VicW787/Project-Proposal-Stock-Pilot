@@ -1,4 +1,4 @@
-import ProductList from '../components/ProductList';
+import ProductList from '../components/ProductList.jsx';
 
 const ProductsPage = () => {
   return <ProductList />;

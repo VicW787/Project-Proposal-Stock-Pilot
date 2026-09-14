@@ -1,5 +1,5 @@
-import SalesForm from '../components/SalesForm';
-import SalesList from '../components/SalesList';
+import SalesForm from '../components/SalesForm.jsx';
+import SalesList from '../components/SalesList.jsx';
 
 const SalesPage = () => {
   return (
