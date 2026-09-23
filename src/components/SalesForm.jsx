@@ -5,7 +5,7 @@ const SalesForm = () => {
   const { products, recordSale } = useInventory();
   const [form, setForm] = useState({ productId: '', quantity: 1 });
 
-  const selected = products.find(p => p.id === parseInt(form.productId));
+  const selected = products.find(p => p.id === (form.productId));
 
   const handleSubmit = (e) => {
     e.preventDefault();

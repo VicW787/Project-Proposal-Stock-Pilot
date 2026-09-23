@@ -24,11 +24,11 @@ Stock Pilot is a simple inventory app for small businesses. It helps a shop owne
 
 ## How to Run it
 
-You need to have the following installations in your computer: 
+You need to have the following installations in your computer:
 (a) Node.js
 (b) Npm
 
-##### Here are the steps
+### Here are the steps
 
 1.) Clone the repository.
 2.) Go to the project folder.
@@ -38,16 +38,14 @@ You need to have the following installations in your computer:
 >>npm run server
 5.) Open a second terminal and start the app:
 >>npm run dev
-6.) Open the link Displayed by Vite (http://localhost:5173)
+6.) Open the link Displayed by Vite usually 'http://localhost:5173'.
 
-### Point to note: 
+### Point to note
 
 Make sure both terminals are running.
 
 ## Things to Add later
 
-a)A login so each business has its own account.
-b)Charts on the dashboard to show sales over time.
-c)Letting the user choose their own "low stock" number instead of the default 10.
-
-
+(a)A login so each business has its own account.
+(b)Charts on the dashboard to show sales over time.
+(c)Letting the user choose their own "low stock" number instead of the default 10. 
