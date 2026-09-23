@@ -1,16 +1,51 @@
-# React + Vite
+# Stock Pilot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Stock Pilot is a simple inventory app for small businesses. It helps a shop owner keep track of their products, see what is running low and record sales.
 
-Currently, two official plugins are available:
+## What It Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1) Dashboard - shows the total number of products, the total value of the inventory, how many items are low on stock, and the total number of sales.
 
-## React Compiler
+2) Products Page - Shows all the products in a table. You can add a new product, edit a product or delete a product. There is also a search bar to find products by name or category.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3) Low Stock Warning - any product with less than 10 items gets a red "Low" tag so you know it's time to restock.
 
-## Expanding the ESLint configuration
+4) Sales Page - you pick a product and a quantity to record a sale. The app takes sold items out of the stock automatically. If you try to sell more than you have, the response is, "There isn't enough stock".
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5) Sales History - a list of all the sales you have made, with the newest ones at the top. You can delete a sale too.
+
+## Tools Used
+
+- React
+- Vite
+- React Router (For moving between pages)
+- Tailwind CSS (for styling)
+- JSON Server (as a fake backend that saves the data in 'db.json')
+
+## How to Run it
+
+You need to have the following installations in your computer:
+(a) Node.js
+(b) Npm
+
+### Here are the steps
+
+1.) Clone the repository.
+2.) Go to the project folder.
+3.) Install the packages.
+>>npm install
+4.) Start the JSON Server (this is the backend, it runs on port 3000)
+>>npm run server
+5.) Open a second terminal and start the app:
+>>npm run dev
+6.) Open the link Displayed by Vite usually 'http://localhost:5173'.
+
+### Point to note
+
+Make sure both terminals are running.
+
+## Things to Add later
+
+(a)A login so each business has its own account.
+(b)Charts on the dashboard to show sales over time.
+(c)Letting the user choose their own "low stock" number instead of the default 10. 

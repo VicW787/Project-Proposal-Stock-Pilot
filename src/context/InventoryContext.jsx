@@ -14,7 +14,7 @@ export const InventoryProvider = ({ children }) => {
       .then(response => response.json())
       .then(data => {
         setProducts(data);
-        return fetch(`${JSON_SERVER}/sales?_sort=date&_order=desc`);
+        return fetch(`${JSON_SERVER}/sales?_sort=-date`);
       })
       .then(response => response.json())
       .then(data => {
@@ -53,7 +53,10 @@ export const InventoryProvider = ({ children }) => {
     fetch(`${JSON_SERVER}/products/${id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(updates)
+      body: JSON.stringify({...updates,
+        price: parseFloat(updates.price),
+        quantity: parseInt(updates.quantity)
+      })  
     })
       .then(response => response.json())
       .then(updated => {
